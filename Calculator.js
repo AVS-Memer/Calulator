@@ -6,4 +6,5 @@ if (op === "+") {alert(num1 + " + " + num2 + " = " + (+num1 + +num2));}
 else if (op === "-") {alert(num1 + " - " + num2 + " = " + (+num1 - +num2));}
 else if (op === "*") {alert(num1 + " * " + num2 + " = " + (+num1 * +num2));}
 else if (op === "/") {alert(num1 + " / " + num2 + " = " + (+num1 / +num2));}
-else {alert("operation error");}} else {alert("numerical error");}
+else {alert("operation error");}
+} else {alert("numerical error");}
