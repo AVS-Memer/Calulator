@@ -1,7 +1,9 @@
 # Calulator
 You input 2 numbers, and an operator, and it will calculate the answer
 
-# Operators:
+
+
+# 2 number Operators:
 # +
 Adds 2 numbers
 # -
