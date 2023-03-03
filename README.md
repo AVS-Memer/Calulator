@@ -9,7 +9,7 @@ Subtracts 2 numbers
 # *
 Multiplies 2 numbers
 # /
-Divides 2 numbers, asks if the answer should have remainder or decimal
+Divides 2 numbers, asks if the answer should have remainder or decimal format
 # %
 Finds one number percent of the other number
 # ^
@@ -29,7 +29,7 @@ Doubles a number
 # *3
 Triples a number
 # /2
-Finds the half of a number
+Finds the half of a number, asks if the answer shought have remainder or decimal format
 # ^2
 Squares a number
 # ^3
