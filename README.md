@@ -9,13 +9,13 @@ Subtracts 2 numbers
 # *
 Multiplies 2 numbers
 # /
-Divides 2 numbers
+Divides 2 numbers, asks if the answer should have remainder or decimal
 # %
 Finds one number percent of the other number
 # ^
 Raises a number to the power of another number
 # R
-Divides 2 numbers with a remainder
+Rounds a number to the nearest multiple of another number
 
 # 1 Number Operations:
 # ++
@@ -38,3 +38,5 @@ Cubes a number
 Gets the floor of a number; rounds it down
 # /\
 Gets the ceiling of a number; rounds it up
+# R
+Rounds a number to the nearest integer
