@@ -29,8 +29,8 @@ if (opType == "n") {
       else if (form == "D") {alert(num1 + "/2 = " + +num1/2);}
       else {alert("format error");} 
     }
-    else if (op == "^2") {alert(num1 + "^2 = " Math.pow(+num1,2));}
-    else if (op == "^3") {alert(num1 + "^3 = " Math.pow(+num1,3));}
+    else if (op == "^2") {alert(num1 + "^2 = " + Math.pow(+num1,2));}
+    else if (op == "^3") {alert(num1 + "^3 = " + Math.pow(+num1,3));}
     else if (op == "\/") {alert("The floor of " + num1 + " = " + Math.floor(+num1));}
     else if (op == "/\\") {alert("The ceiling of " + num1 + " = " + Math.ceil(+num1));}
     else if (op == "R") {alert(num1 + " rounded to the nearest integer is " + Math.round(+num1));}
