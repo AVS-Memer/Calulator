@@ -39,5 +39,5 @@ if (opType == "n") {
 } else if (opType == "p") {
   let a = prompt("What is the x term coefficient?");
   let b = prompt("What is the constant?");
-  if (b == "0") {if (a == "0") {alert("x = ℝ");} else {alert("x = ∅");}} else {alert("x = " + (- +b/+a) + ".");}
+  if (b == "0") {if (a == "0") {alert("x = ℝ");} else {alert("x = ∅");}} else {alert("x = " + (- +b/+a));}
 } else {alert("operation type error");}
