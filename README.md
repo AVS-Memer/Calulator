@@ -1,9 +1,15 @@
 # Calulator
-You input 1 or 2 numbers and an operator, and it will calculate the answer
+You input the type of calculation you want
+# n
+numeric calculation
+# p
+polynomial calculation (we only have linear right now)
 
-# 2 Number Operators:
-# +
-Adds 2 numbers
+# numeric calculation:
+  You input 1 or 2 numbers and an operator, and it will calculate the answer
+#   2 Number Operators:
+#   +
+  Adds 2 numbers
 # -
 Subtracts 2 numbers
 # *
