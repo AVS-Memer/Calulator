@@ -9,7 +9,7 @@ if (opType == "n") {
     else if (op == "*") {alert(+num1 + " * " + +num2 + " = " + (+num1 * +num2));}
     else if (op == "/") {
       let form = prompt("Remainder or decimal form? R/D");
-      if (form == "R") {alert(+num1 + "/" + +num2 + " = " Math.floor(+num1 / +num2) + "R" + (+num1 % +num2));}
+      if (form == "R") {alert(+num1 + "/" + +num2 + " = " + Math.floor(+num1 / +num2) + "R" + (+num1 % +num2));}
       else if (form == "D") {alert(+num1 + " / " + +num2 + " = " + (+num1 / +num2));}
       else {alert("format error");} 
     }
