@@ -1,5 +1,6 @@
 let opType = prompt("What kind of operation? (n / p)");
 if (opType == "n") {
+  let numofnums = prompt("How many numbers?");
   let num1 = prompt("What is the first number?");
   let op = prompt("What is the operator?");
   if (numofnums == 2) {
