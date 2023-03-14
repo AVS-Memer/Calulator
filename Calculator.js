@@ -3,7 +3,7 @@ if (opType == "n") {
   let numofnums = prompt("How many numbers?");
   let num1 = prompt("What is the first number?");
   let op = prompt("What is the operator?");
-  if (numofnums == 2) {
+  if (numofnums == "2") {
     let num2 = prompt("What is the second number?");
     if (op == "+") {alert(num1 + " + " + num2 + " = " + (+num1 + +num2));}
     else if (op == "-") {alert(num1 + " - " + num2 + " = " + (+num1 - +num2));}
@@ -18,7 +18,7 @@ if (opType == "n") {
     else if (op == "^") {alert(num1 + "^" + num2 + " = " + Math.pow(+num1 * +num2));}
     else if (op == "R") {alert(num1 + " rounded to the nearest " + +num2 + " is " + Math.round(+num1/+num2)*+num2);}
     else {alert("operation error");}
-  } else {
+  } else if (numofnums == "1") {
     if (op == "++") {alert(num1 + "++ = " + +num1+1);}
     else if (op == "--") {alert(num1 + "-- = " + +num1-1);}
     else if (op == "%") {alert(num1 + "% = " + +num1/100);}
