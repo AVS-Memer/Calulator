@@ -61,9 +61,9 @@ if (opType == "n") {
     } else if (calc == "v") {
       alert("The vertex is (" + +b/-2*+a + ", " + (+a*Math.pow(+b,2)/-2*Math.pow(+a,2) + Math.pow(+b,2)/-2*+a + +c) + ")");
     } else if (calc == "x") {
-      if (Math.pow(+b,2)-4*+a*+c < 0) {alert("The x intercepts are " + (+b+Math.sqrt(4*+a*+c-Math.pow(+b,2)))/-2*+a + "i, " (+b-Math.sqrt(4*+a*+c-Math.pow(+b,2)))/-2*+a) + "i";}
+      if (Math.pow(+b,2)-4*+a*+c < 0) {alert("The x intercepts are " + (+b+Math.sqrt(4*+a*+c-Math.pow(+b,2)))/-2*+a + "i, " + (+b-Math.sqrt(4*+a*+c-Math.pow(+b,2)))/-2*+a) + "i";}
       else if (Math.pow(+b,2)-4*+a*+c == 0)) {alert("The x intercept is " + (+b+Math.sqrt(Math.pow(+b,2)-4*+a*+c))/-2*+a);}
-      else {alert("The x intercepts are " + (+b+Math.sqrt(Math.pow(+b,2)-4*+a*+c))/-2*+a + ", " (+b-Math.sqrt(Math.pow(+b,2)-4*+a*+c))/-2*+a);}
+      else {alert("The x intercepts are " + (+b+Math.sqrt(Math.pow(+b,2)-4*+a*+c))/-2*+a + ", " + (+b-Math.sqrt(Math.pow(+b,2)-4*+a*+c))/-2*+a);}
     } else if (calc == "y") {
       alert("The y intercpt is (0," + c + ")");
     } else {alert("caculation error");}
