@@ -38,7 +38,7 @@ Finds the half of a number, asks if the answer shought have remainder or decimal
 Squares a number
 # ^3
 Cubes a number
-# \/
+# \\/
 Gets the floor of a number; rounds it down
 # /\
 Gets the ceiling of a number; rounds it up
