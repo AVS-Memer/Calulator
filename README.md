@@ -46,4 +46,22 @@ Gets the ceiling of a number; rounds it up
 Rounds a number to the nearest integer
 # Polynomial Calculation
 # Linear Calculation
-Input the coefficient of the x term and the constant, and it will find x
+Input the coefficient of the x term and the constant
+# s
+Outputs the slope
+# x
+Outputs the x intercept
+# y
+Outputs the y intercept
+# Quadratic Calculation
+Inputs the coefficient of the x² term, the coefficient of the x term, and the constant
+# a
+Outputs the axis of symettery
+# m
+Outputs the minimum/maximum value
+# v
+Outputs the vertex coordinate
+# x
+Outputs the x intercepts
+# y
+Outputs the y intercept
