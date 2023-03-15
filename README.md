@@ -3,7 +3,7 @@ You input the type of calculation you want (n / p)
 # n
 numeric calculation
 # p
-polynomial calculation (we only have linear right now)
+polynomial calculation
 # Numeric Calculation:
 You input 1 or 2 numbers and an operator, and it will calculate the answer
 # 2 Number Operators:
