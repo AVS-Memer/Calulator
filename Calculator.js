@@ -26,7 +26,7 @@ if (opType == "n") {
     else if (op == "*3") {alert(num1 + "*3 = " + +num1*3);}
     else if (op == "/2") {
       let form = prompt("Remainder or decimal form? R/D");
-      if (form == "R") {alert(num1 + "/2 = " + Math.floor(+num1/2) + "R" + (+num1%2));}
+      if (form == "R") {alert(num1 + "/2 = " + Math.floor(+num1/2) + "R" + +num1%2);}
       else if (form == "D") {alert(num1 + "/2 = " + +num1/2);}
       else {alert("format error");} 
     }
@@ -38,7 +38,34 @@ if (opType == "n") {
     else {alert("operation error");}
   }
 } else if (opType == "p") {
-  let a = prompt("What is the x term coefficient?");
-  let b = prompt("What is the constant?");
-  if (b == "0") {if (a == "0") {alert("x = ℝ");} else {alert("x = ∅");}} else {alert("x = " + (- +b/+a));}
+  let degree = prompt("Linear or quadratic? (l / q)");
+  if (degree == "l") {
+    let calc = prompt("What should be calculated? (s / x / y)");
+    let a = prompt("What is the x term coefficient?");
+    let b = prompt("What is the constant?");
+    if (calc == "x") {
+      if (b == "0") {if (a == "0") {alert("x = ℝ");} else {alert("x = ∅");}} else {alert("x = " + (- +b/+a));}
+    } else if (calc == "s") {
+      alert(a);
+    } else if (calc == "y") {alert(b);} else {alert("calculation error");}
+  } else if (degree == "p") {
+    let calc = prompt("What should be calculated? (a / m / v / x / y)");
+    let a = prompt("What is the x² term coefficient?");
+    if (a == "0") {alert("This is a linear equation. Please put l for the question Linear or \"quadratic?\"");}
+    let b = prompt("What is the x term coefficient?");
+    let c = prompt("What is the constant?");
+    if (calc == "a") {
+      alert("The axis of symmetry is x = " + +b/-2*+a);
+    } else if (calc == "m") {
+      if (a > 0) {alert("The minimum is " + (+a*Math.pow(+b,2)/-2*Math.pow(+a,2) + Math.pow(+b,2)/-2*+a + +c));} else {alert("The maximum is " + (+a*Math.pow(+b,2)/-2*Math.pow(+a,2) + Math.pow(+b,2)/-2*+a + +c));}
+    } else if (calc == "v") {
+      alert("The vertex is (" + +b/-2*+a + ", " + (+a*Math.pow(+b,2)/-2*Math.pow(+a,2) + Math.pow(+b,2)/-2*+a + +c) + ")");
+    } else if (calc == "x") {
+      if (Math.pow(+b,2)-4*+a*+c < 0) {alert("The x intercepts are " + (+b+Math.sqrt(4*+a*+c-Math.pow(+b,2)))/-2*+a + "i, " (+b-Math.sqrt(4*+a*+c-Math.pow(+b,2)))/-2*+a) + "i";}
+      else if (Math.pow(+b,2)-4*+a*+c == 0)) {alert("The x intercept is " + (+b+Math.sqrt(Math.pow(+b,2)-4*+a*+c))/-2*+a);}
+      else {alert("The x intercepts are " + (+b+Math.sqrt(Math.pow(+b,2)-4*+a*+c))/-2*+a + ", " (+b-Math.sqrt(Math.pow(+b,2)-4*+a*+c))/-2*+a);}
+    } else if (calc == "y") {
+      alert("The y intercpt is (0," + c + ")");
+    } else {alert("caculation error");}
+  } else {alert("degree error");} 
 } else {alert("operation type error");}
