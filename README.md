@@ -40,7 +40,7 @@ Squares a number
 Cubes a number
 # \\/
 Gets the floor of a number; rounds it down
-# /\\
+# /\
 Gets the ceiling of a number; rounds it up
 # R
 Rounds a number to the nearest integer
