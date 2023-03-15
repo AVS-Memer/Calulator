@@ -43,11 +43,9 @@ if (opType == "n") {
     let calc = prompt("What should be calculated? (s / x / y)");
     let a = prompt("What is the x term coefficient?");
     let b = prompt("What is the constant?");
-    if (calc == "x") {
-      if (b == "0") {if (a == "0") {alert("x = ℝ");} else {alert("x = ∅");}} else {alert("x = " + (- +b/+a));}
-    } else if (calc == "s") {
-      alert(a);
-    } else if (calc == "y") {alert(b);} else {alert("calculation error");}
+    if (calc == "x") {if (b == "0") {if (a == "0") {alert("x = ℝ");} else {alert("x = ∅");}} else {alert("x = " + (- +b/+a));}}
+    else if (calc == "s") {alert(a);}
+    else if (calc == "y") {alert(b);} else {alert("calculation error");}
   } else if (degree == "q") {
     let calc = prompt("What should be calculated? (a / m / v / x / y)");
     let a = prompt("What is the x² term coefficient?");
