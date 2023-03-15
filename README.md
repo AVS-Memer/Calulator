@@ -55,6 +55,7 @@ Outputs the x intercept
 Outputs the y intercept
 # Quadratic Calculation
 Inputs the coefficient of the x² term, the coefficient of the x term, and the constant
+If the coefficient is x² 0, it will tell you that it should be a linear function
 # a
 Outputs the axis of symettery
 # m
