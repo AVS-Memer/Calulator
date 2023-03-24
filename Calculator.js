@@ -16,7 +16,9 @@ if (opType == "n") {
     }
     else if (op == "%") {alert(num1 + "% of " + num2 + " = " + (+num1 * +num2 / 100));}
     else if (op == "^") {alert(num1 + "^" + num2 + " = " + Math.pow(+num1 * +num2));}
-    else if (op == "R") {alert(num1 + " rounded to the nearest " + +num2 + " is " + Math.round(+num1/+num2)*+num2);}
+    else if (op == "R") {alert(num1 + " rounded to the nearest " + num2 + " is " + Math.round(+num1/+num2)*+num2);}
+    else if (op == "GCF") {alert(`The GCF of ${num1} and ${num2} is ${Math.GCF(+num1,+num2)}`);}
+    else if (op == "LCM") {alert(`The LCM of ${num1} and ${num2} is ${Math.LCM(+num1,+num2)}`);}
     else {alert("operation error");}
   } else if (numofnums == "1") {
     if (op == "++") {alert(num1 + "++ = " + +num1+1);}
