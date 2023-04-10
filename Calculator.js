@@ -51,8 +51,7 @@ if (opType == "n") {
   } else if (degree == "q") {
     let calc = prompt("What should be calculated? (a / m / v / x / y)");
     let a = prompt("What is the x² term coefficient?");
-    if (a == "0") {alert("degree error");}
-    } else {
+    if (a == "0") {alert("degree error");} else {
       let b = prompt("What is the x term coefficient?");
       let c = prompt("What is the constant?");
       if (calc == "a") {
@@ -69,5 +68,5 @@ if (opType == "n") {
         alert("The y intercpt is (0," + c + ")");
       } else {alert("caculation error");}
     }
-  } else {alert("degree error");
+  } else {alert("degree error");}
 } else {alert("operation type error");}
