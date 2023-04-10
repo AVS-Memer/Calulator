@@ -69,5 +69,5 @@ if (opType == "n") {
         alert("The y intercpt is (0," + c + ")");
       } else {alert("caculation error");}
     }
-  } else {alert("degree error");} 
+  } else {alert("degree error");
 } else {alert("operation type error");}
