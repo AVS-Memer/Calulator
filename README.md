@@ -82,11 +82,5 @@ Classify by side. Input the lengths of the 3 sides, and it will find out if the 
 # b
 Classify by both angle and side. Input 2 or 3 angles in degrees and the lengths of the 3 sides, and it will find out if the triangle is acute, right, or obtuse and if it's scalene, isosceles, or equilateral
 # Trignometry Functions
-Input the function and the angle in degrees. You could type the abbriviation, or the full name:
-sin - sine
-cos - cosine
-tan - tangent
-sec - secant
-csc - cosecant
-cot - cotangent
+Input the function and the angle in degrees. You could type the abbriviation, or the full name. sin: sine, cos: cosine, tan: tangent, sec: secant, csc: cosecant, cot: cotangent.
 To use inverse functions, you would give the abbriviation the prefix arc, or type the word inverse in front of the function name
