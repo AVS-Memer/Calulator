@@ -4,6 +4,8 @@ You input the type of calculation you want (n / p)
 numeric calculation
 # p
 polynomial calculation
+# t
+trignometric calculation
 # Numeric Calculation:
 You input 1 or 2 numbers and an operator, and it will calculate the answer
 # 2 Number Operators:
@@ -66,3 +68,25 @@ Outputs the vertex coordinate
 Outputs the x intercepts
 # y
 Outputs the y intercept
+# Trignometric calculation
+# c
+Triangle Classification
+# f
+Trignometry Functions
+# Triangle Classification
+choose how to classify the triangle: a s b
+# a
+Classify by angle. Input 2 or 3 of the angles in degrees, and it will find out if the triangle is acute, right, or obtuse
+# s
+Classify by side. Input the lengths of the 3 sides, and it will find out if the triangle is scalene, isosceles, or equilateral
+# b
+Classify by both angle and side. Input 2 or 3 angles in degrees and the lengths of the 3 sides, and it will find out if the triangle is acute, right, or obtuse and if it's scalene, isosceles, or equilateral
+# Trignometry Functions
+Input the function and the angle in degrees. You could type the abbriviation, or the full name:
+sin - sine
+cos - cosine
+tan - tangent
+sec - secant
+csc - cosecant
+cot - cotangent
+To use inverse functions, you would give the abbriviation the prefix arc, or type the word inverse in front of the function name
