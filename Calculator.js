@@ -153,7 +153,7 @@ if (opType == "t") {
     }
   } else if (triType == "f") {
     let func = prompt("Which trigonometric function?");
-    let num = prompt("What is the number?");
+    let num = prompt("What is the angle in degrees?");
     if (func == "sin" || func == "sine") {
       alert("The sine of " + num + " is " + Math.sin(num*Math.PI/180));
     } else if (func == "cos" || func == "cosine") {
