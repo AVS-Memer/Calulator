@@ -1,4 +1,4 @@
-let opType = prompt("What kind of operation? (n / p / t)")
+let opType = prompt("What kind of operation? (n / p / t)");
 if (opType == "n") {
   let numofnums = prompt("How many numbers?");
   let num1 = prompt("What is the first number?");
