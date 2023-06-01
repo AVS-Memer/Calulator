@@ -72,34 +72,38 @@ if (opType == "n") {
 if (opType == "t") {
   let triType = prompt("What should it do? (c / f)");
   if (triType == "c") {
-    let class = prompt("How should it classify the triangle? (a / s / b)");
-    if (class == "a" || class == "b") {
-      let aClass = null;
-      let a1 = prompt("What is the first angle?");
-      if (a1 > 0 && a1 < 180) {
-        let a2 = prompt("What is the second angle?");
-        if (a2 > 0 && a1+a2 < 180) {
-          let a3 = prompt("What is the third angle? (Leave blank to autofill)");
-          if (a3 == null || a1+a2+a3 == 180) {
-            a3 = 180-a1-a2;
-            if (a1 > 90 || a2 > 90 || a3 > 90) {
-              if (class == "a") {
-                alert("This is an obtuse triangle");
+    let classify = prompt("How should it classify the triangle? (a / s / b)");
+    if (classify == "a" || classify == "s" || classify == "b") {
+      if (classify != "s") {
+        let aClass = null;
+        let a1 = prompt("What is the first angle?");
+        if (a1 > 0 && a1 < 180) {
+          let a2 = prompt("What is the second angle?");
+          if (a2 > 0 && a1+a2 < 180) {
+            let a3 = prompt("What is the third angle? (Leave blank to autofill)");
+            if (a3 == null || a1+a2+a3 == 180) {
+              a3 = 180-a1-a2;
+              if (a1 > 90 || a2 > 90 || a3 > 90) {
+                if (classify == "a") {
+                  alert("This is an obtuse triangle");
+                } else {
+                  aClass = "obtuse";
+                }
+              } else if (a1 == 90 || a2 == 90 || a3 == 90) {
+                if (classify == "a") {
+                  alert("This is a right triangle");
+                } else {
+                  aClass = "right";
+                }
               } else {
-                aClass = "obtuse";
-              }
-            } else if (a1 == 90 || a2 == 90 || a3 == 90) {
-              if (class == "a") {
-                alert("This is a right triangle");
-              } else {
-                aClass = "right";
+                if (classify == "a") {
+                  alert("This is an acute triangle");
+                } else {
+                  aClass = "acute";
+                }
               }
             } else {
-              if (class == "a") {
-                alert("This is an acute triangle");
-              } else {
-                aClass = "acute";
-              }
+              alert("Angle error");
             }
           } else {
             alert("Angle error");
@@ -107,32 +111,32 @@ if (opType == "t") {
         } else {
           alert("Angle error");
         }
-      } else {
-        alert("Angle error");
       }
-    }
-    if (class == "s" || class == "b") {
-      let sClass = null;
-      let s1 = prompt("What is the first leg?");
-      if (s1 > 0) {
-        let s2 = prompt("What is the second leg?");
-        if (s2 > 0) {
-          let s3 = prompt("What is the hypotenuse?");
-          if (s1+s2 > s3 && s3 > s1 && s3 > s2) {
-            if (s1 == s2 == s3) {
-              alert("This is an equilateral triangle");
-            } else if (s1 == s2 || s1 == s3 || s2 == s3) {
-              if (class == "s") {
-                alert("This is an isosceles triangle");
+      if (classify == "s" || classify == "b") {
+        let sClass = null;
+        let s1 = prompt("What is the first leg?");
+        if (s1 > 0) {
+          let s2 = prompt("What is the second leg?");
+          if (s2 > 0) {
+            let s3 = prompt("What is the hypotenuse?");
+            if (s1+s2 > s3 && s3 > s1 && s3 > s2) {
+              if (s1 == s2 == s3) {
+                alert("This is an equilateral triangle");
+              } else if (s1 == s2 || s1 == s3 || s2 == s3) {
+                if (classify == "s") {
+                  alert("This is an isosceles triangle");
+                } else {
+                  sClass = "isosceles";
+                }
               } else {
-                sClass = "isosceles";
+                if (classify == "s") {
+                  alert("This is a scalene triangle");
+                } else {
+                  sClass = "scalene";
+                }
               }
             } else {
-              if (class == "s") {
-                alert("This is a scalene triangle");
-              } else {
-                sClass = "scalene";
-              }
+              alert("Side error");
             }
           } else {
             alert("Side error");
@@ -140,15 +144,13 @@ if (opType == "t") {
         } else {
           alert("Side error");
         }
-      } else {
-        alert("Side error");
       }
-    }
-    if (class == "b") {
-      if (sClass == "scalene") {
-        alert("This is a scalene " + aClass + " triangle");
-      } else if (sClass == "isosceles") {
-        alert("This is an isosceles " + aClass + "triangle");
+      if (classify == "b") {
+        if (sClass == "scalene") {
+          alert("This is a scalene " + aClass + " triangle");
+        } else if (sClass == "isosceles") {
+          alert("This is an isosceles " + aClass + "triangle");
+        }
       }
     }
   } else if (triType == "f") {
