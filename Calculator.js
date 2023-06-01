@@ -58,7 +58,7 @@ if (opType == "n") {
         alert("The axis of symmetry is x = " + +b/-2*+a);
       } else if (calc == "m") {
         if (a > 0) {alert("The minimum is " + (+a*Math.pow(+b,2)/-2*Math.pow(+a,2) + Math.pow(+b,2)/-2*+a + +c));} else {alert("The maximum is " + (+a*Math.pow(+b,2)/-2*Math.pow(+a,2) + Math.pow(+b,2)/-2*+a + +c));}
-      } else if (calc == "v") 
+      } else if (calc == "v") {
         alert("The vertex is (" + +b/-2*+a + ", " + (+a*Math.pow(+b,2)/-2*Math.pow(+a,2) + Math.pow(+b,2)/-2*+a + +c) + ")");
       } else if (calc == "x") {
         if (Math.pow(+b,2)-4*+a*+c < 0) {alert("The x intercepts are " + (+b+Math.sqrt(4*+a*+c-Math.pow(+b,2)))/-2*+a + "i, " + (+b-Math.sqrt(4*+a*+c-Math.pow(+b,2)))/-2*+a) + "i";}
