@@ -1,4 +1,4 @@
-# Calulator
+# Calulator (malfunctioning)
 You input the type of calculation you want (n / p)
 # n
 numeric calculation
